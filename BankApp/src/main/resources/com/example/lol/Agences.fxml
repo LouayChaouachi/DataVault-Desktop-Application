@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1535.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lol.AgenceController">
+    <children>
+        <ImageView fitHeight="276.0" fitWidth="376.0" layoutX="45.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@logo.jpeg" />
+            </image>
+        </ImageView>
+        <Button layoutX="91.0" layoutY="442.0" mnemonicParsing="false" onAction="#switchToClients" prefHeight="47.0" prefWidth="184.0" text="Gestion Clients" />
+        <Button layoutX="91.0" layoutY="531.0" mnemonicParsing="false" onAction="#switchToAgences" prefHeight="47.0" prefWidth="184.0" text="Gestion Agences" />
+        <Button layoutX="91.0" layoutY="621.0" mnemonicParsing="false" onAction="#switchToComptes" prefHeight="47.0" prefWidth="184.0" text="Gestion Comptes" />
+        <Line endX="-100.0" endY="677.7999877929688" layoutX="471.0" layoutY="131.0" startX="-100.0" startY="-100.5999984741211" />
+        <Label layoutX="587.0" layoutY="76.0" text="Bienvenue Sur DataVault">
+            <font>
+                <Font name="Britannic Bold" size="66.0" />
+            </font>
+        </Label>
+        <Label layoutX="420.0" layoutY="182.0" text="Liste Agences">
+            <font>
+                <Font name="Britannic Bold" size="40.0" />
+            </font>
+        </Label>
+        <TableView fx:id="tableAgence" layoutX="420.0" layoutY="252.0" prefHeight="545.0" prefWidth="1065.0">
+            <columns>
+                <TableColumn fx:id="idAg" prefWidth="33.5999755859375" text="ID" />
+                <TableColumn fx:id="nomAg" prefWidth="138.4000244140625" text="Nom" />
+                <TableColumn fx:id="adresseAg" prefWidth="144.0" text="Adresse" />
+                <TableColumn fx:id="emailAg" prefWidth="192.0" text="Email" />
+                <TableColumn fx:id="responsableAg" prefWidth="145.60003662109375" text="Responsable" />
+                <TableColumn fx:id="numAgenceAg" prefWidth="192.7999267578125" text="Numéro Agence" />
+                <TableColumn fx:id="optionAg" prefWidth="220.0001220703125" text="Options" />
+            </columns>
+        </TableView>
+        <Button fx:id="addCo" layoutX="1300.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleAddAgence" prefHeight="35.0" prefWidth="170.0" text="Add Agence" />
+
+    </children>
+</Pane>

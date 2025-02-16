@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="840.0" prefWidth="1535.0" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lol.CompteController">
+
+    <children>
+        <ImageView fitHeight="284.0" fitWidth="299.0" layoutX="45.0" layoutY="34.0">
+            <image>
+                <Image url="@logo.jpeg" />
+            </image>
+        </ImageView>
+
+        <Button layoutX="91.0" layoutY="442.0" mnemonicParsing="false" onAction="#switchToClients" prefHeight="47.0" prefWidth="184.0" text="Gestion Clients" />
+
+        <Button layoutX="91.0" layoutY="531.0" mnemonicParsing="false" onAction="#switchToAgences" prefHeight="47.0" prefWidth="184.0" text="Gestion Agences" />
+
+        <Button layoutX="91.0" layoutY="621.0" mnemonicParsing="false" prefHeight="47.0" prefWidth="184.0" text="Gestion Comptes" />
+
+
+        <Line endX="-100.0" endY="677.8" layoutX="471.0" layoutY="131.0" startX="-100.0" startY="-100.6" />
+
+        <Label layoutX="587.0" layoutY="76.0" text="Bienvenue Sur DataVault">
+            <font>
+                <Font name="Britannic Bold" size="66.0" />
+            </font>
+        </Label>
+
+        <TableView fx:id="tableCompte" layoutX="420.0" layoutY="252.0" prefHeight="545.0" prefWidth="1065.0">
+            <columns>
+                <TableColumn fx:id="idCo" prefWidth="40.0" text="ID" />
+                <TableColumn fx:id="soldeCo" prefWidth="124.0" text="Solde" />
+                <TableColumn fx:id="typeCo" prefWidth="172.79998779296875" text="Type" />
+                <TableColumn fx:id="dateCo" prefWidth="181.60003662109375" text="Date Ouverture" />
+                <TableColumn fx:id="clientIdCo" prefWidth="85.60009765625" text="Client ID" />
+                <TableColumn fx:id="optionCo" prefWidth="460.0" text="Operations" />
+            </columns>
+        </TableView>
+
+        <Button fx:id="addCo" layoutX="1300.0" layoutY="185.0" mnemonicParsing="false" onAction="#handleAddCompte" prefHeight="35.0" prefWidth="170.0" text="Add Compte" />
+    </children>
+</Pane>

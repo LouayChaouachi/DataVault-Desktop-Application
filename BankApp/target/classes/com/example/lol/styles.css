@@ -1,0 +1,99 @@
+/* styles.css */
+
+/* Style de base pour le fond */
+.pane {
+    -fx-background-color: #f5f6fa;
+}
+
+/* Style des boutons */
+.button {
+    -fx-background-color: #2a75bb;
+    -fx-text-fill: white;
+    -fx-background-radius: 8px;
+    -fx-padding: 12px 25px;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 5, 0, 0, 1);
+}
+
+.button:hover {
+    -fx-background-color: #1a4f8b;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 2);
+}
+
+/* Style spécifique pour les boutons Add */
+#addCo, #addButton {
+    -fx-background-color: #4CAF50;
+}
+
+#addCo:hover, #addButton:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Style des labels */
+.label {
+    -fx-text-fill: #2d2d2d;
+    -fx-font-family: "Britannic Bold";
+}
+
+.label.title {
+    -fx-font-size: 66px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.1), 4, 0, 2, 2);
+}
+
+.label.subtitle {
+    -fx-font-size: 40px;
+    -fx-text-fill: #4a4a4a;
+}
+
+/* Style des tables */
+.table-view {
+    -fx-background-color: white;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 10, 0, 0, 5);
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #f9f9f9;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #e3f2fd;
+}
+
+.table-column {
+    -fx-alignment: CENTER;
+    -fx-font-size: 14px;
+}
+
+.table-view .column-header {
+    -fx-background-color: #2a75bb;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 14px;
+}
+
+/* Style de l'image */
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.2), 10, 0, 0, 5);
+}
+
+/* Style des séparateurs */
+.line {
+    -fx-stroke: #dcdde1;
+    -fx-stroke-width: 2;
+}
+
+/* Style des cellules de tableau */
+.table-cell {
+    -fx-padding: 10px;
+    -fx-border-color: transparent #dcdde1 transparent transparent;
+}
+
+/* Style des en-têtes de colonnes */
+.column-header-background {
+    -fx-background-color: #2a75bb;
+    -fx-background-radius: 10px 10px 0 0;
+}
